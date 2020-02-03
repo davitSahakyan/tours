@@ -1,12 +1,22 @@
 import React from 'react';
+import Navbar from './Components/navbar/Navbar';
 import './App.scss';
 
-function App() {
-  return (
-    <div>
-      Hello
-    </div>
-  );
+class App extends React.Component{
+  constructor(){
+    super();
+    this.state={
+      loading : false,
+    }
+  }
+  render(){
+    return (
+      <div>
+        <Navbar />
+      </div>
+    );
+  }
+  
 }
 
 export default App;
