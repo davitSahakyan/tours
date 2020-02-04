@@ -1,6 +1,7 @@
 import React from 'react';
-import Navbar from './Components/navbar/Navbar';
+import Navbar from './Components/Navbar/Navbar';
 import './App.scss';
+import TourList from './Components/TourList';
 
 class App extends React.Component{
   constructor(){
@@ -13,8 +14,9 @@ class App extends React.Component{
     return (
       <div>
         <Navbar />
+        <TourList />
       </div>
-    );
+    )  
   }
   
 }
