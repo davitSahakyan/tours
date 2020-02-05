@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import './App.scss';
-import TourList from './Components/TourList';
+import TourList from './Components/TourList/TourList';
 
 class App extends React.Component{
   constructor(){
@@ -10,6 +10,7 @@ class App extends React.Component{
       loading : false,
     }
   }
+
   render(){
     return (
       <div>
