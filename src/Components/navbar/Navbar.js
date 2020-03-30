@@ -6,15 +6,17 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <img src={logo} alt="tours logo" />
+            <Link to="/home">
+                <img src={logo} alt="tours logo" />
+            </Link>
             <ul className="nav-links">
                 <li>
-                    <Link to="/tours" className="nav-link">
+                    <Link to="/home" className="nav-link">
                         home
                     </Link>
                 </li>
                 <li>
-                    <Link to="/tours" className="nav-link">
+                    <Link to="/about" className="nav-link">
                         about
                     </Link>
                 </li>
